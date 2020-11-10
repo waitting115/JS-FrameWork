@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="vue.min.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div id="app">
+        {{msg}}
+    </div>
+
+    <script>
+        let app = new Vue({
+            // el: '#app',
+            data: {
+                msg: 'wei'
+            },
+            methods: {
+                
+            }
+        }).$mount('#app');
+
+        console.log('data', app.$data)
+        app.$el.style.cssText = 'width: 100px; height: 100px; background: red;';
+        console.log('options', app.$options);
+    </script>
+</body>
+</html>

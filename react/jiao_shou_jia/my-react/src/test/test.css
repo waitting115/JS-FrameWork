@@ -1,0 +1,88 @@
+.content {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+.box {
+    width: 800px;
+    height: 400px;
+    background: #ccc;
+    position: relative;
+    overflow: hidden;
+}
+.box_ul {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: chartreuse;
+    transition: .3s;
+}
+.box_ul_li {
+    height: 100%;
+    width: 800px;
+    float: left;
+}
+.box_ul_li img {
+    width: 100%;
+    height: 100%;
+}
+.points {
+    width: 100%;
+    height:100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: end;
+    align-items: center;
+}
+.points_ul {
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+    z-index: 30;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.point {
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    float: left;
+    margin: 10px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+.point_active {
+    width: 20px;
+    height: 20px;
+}
+.l_r {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 3em;
+}
+.public_lr {
+    width: 100px;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    color: #8c8c8c;
+}
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}

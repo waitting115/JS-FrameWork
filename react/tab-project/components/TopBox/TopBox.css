@@ -1,0 +1,26 @@
+.TopBox {
+    width: 100%;
+    height: 80px;
+    background: pink;
+}
+.TopBoxUl {
+    width: 100%;
+    height: 100%;
+    background: grey;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.TBULi {
+    width: 20%;
+    height: 50%;
+    background: honeydew;
+    list-style: none;
+    text-align: center;
+    line-height: 250%;
+    cursor: pointer;
+}
+.active {
+    background: chartreuse;
+}
